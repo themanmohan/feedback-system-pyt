@@ -13,10 +13,12 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-
 } from "react-router-dom";
+
 function App() {
+  //dispatching redux
    const dispatch = useDispatch()
+   //dispatching when component upadte
   useEffect(() => {
     dispatch(getFeedBack());
   }, [dispatch]);

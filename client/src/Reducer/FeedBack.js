@@ -1,3 +1,4 @@
+ //feedback reduce
  const feedbacks = (feedbacks = [], action) => {
      switch (action.type) {
          case 'FETCH_ALL':

@@ -12,7 +12,9 @@ dbConnection()
 
 app.use(express.json({extended:false}))
 
+//cross origin
  app.use(cors())
+
 //Define Route 
 app.use("/feedback",feedBackRoute)
 

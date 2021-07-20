@@ -1,4 +1,6 @@
-
+//@desc      getting feedback 
+//@route     GET/feedback
+//@access    public
 const FeedBack=require('../Model/FeedBack')
  const  getFeedBack = async (req, res) => {
     try {
@@ -15,12 +17,13 @@ const FeedBack=require('../Model/FeedBack')
 
 
 
-
+//@desc      creating feedback 
+//@route     POST/feedback
+//@access    public
 const createFeedBack = async (req, res) => {
     try {
         console.log(req.body)
         const feedback = await FeedBack.create(req.body)
-        console.log(feedback)
         res.status(200).json(feedback)
     } catch (error) {
         res.status(200).json({
@@ -30,7 +33,7 @@ const createFeedBack = async (req, res) => {
 }
 
 
-
+//exporting
 module.exports={
     createFeedBack,
     getFeedBack

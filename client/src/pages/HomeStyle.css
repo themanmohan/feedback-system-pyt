@@ -1,0 +1,23 @@
+.maincontainer {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.maincontainer .row {
+    margin: 0 auto;
+}
+
+.logincard {
+    height:250px;
+    width:450px;
+    background-color: rgba(75, 75, 69, 0.5);
+    
+}
+
+.logincardbody {
+    margin:80px auto;
+}
